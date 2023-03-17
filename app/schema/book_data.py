@@ -13,6 +13,7 @@ class BookOut(BaseModel):
     status: bool = True
     message: str = "Successfully Created the Book"
     id: Optional[uuid.UUID]
+    title: str
     author: str
     published_date: date
     created_at: datetime
